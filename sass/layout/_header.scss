@@ -1,11 +1,11 @@
-.back {
-  height: 550px;
+.main {
   background-color: #dee0e0;
-  background-image: url(../img/f1.jpg);
+  background-image: url(../img/back.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
+
 .header {
   display: flex;
   height: 100px;
@@ -17,16 +17,22 @@
 }
 .site-nav {
   display: flex;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-left: 100px;
 }
 
 .site-nav_item {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  padding: 38px 0;
   font-size: 18px;
   line-height: 1.17;
 
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 }
 
@@ -37,24 +43,61 @@
   &:focus {
     color: #4c3b85;
   }
+  &::after {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+  }
+  &:hover::after {
+    animation: circle 1.5s ease-in forwards;
+  }
 }
 .contacts-head {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 100px;
 }
-.contacts__icon {
-  fill: currentColor;
-  margin-right: 8px;
-}
-.contacts-head_link {
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  color: black;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 0);
+.contacts-head_button {
+  display: inline-flex;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 50px;
+  margin-left: 30px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  background-color: #682483;
+
   &:hover,
   &:focus {
-    color: #4c3b85;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+  }
+  .contacts-head_link {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 10px 30px;
+    color: black;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 0);
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+  .contacts__icon {
+    fill: currentColor;
+    margin-right: 8px;
   }
 }

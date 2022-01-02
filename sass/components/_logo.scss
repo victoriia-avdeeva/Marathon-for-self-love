@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: Berkshire Swash;
   margin-left: 15px;
   font-weight: 500;
@@ -25,5 +25,5 @@
 
 .logo:hover,
 .logo:focus {
-  color: #4c3b85;
+  color: #682483;
 }

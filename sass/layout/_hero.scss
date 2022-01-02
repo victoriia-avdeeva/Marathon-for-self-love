@@ -1,11 +1,28 @@
 .hero {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+}
+.hero-box {
+  display: flex;
+  flex-direction: column;
 }
 .hero_title {
   display: flex;
-  justify-content: start;
+  text-align: end;
+  font-weight: 700;
+  font-family: Pacifico;
+  margin-bottom: 70px;
+  font-size: 55px;
+  line-height: 1.2;
 }
 .hero_img {
   display: flex;
-  margin-left: 100px;
+  justify-content: flex-start;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
