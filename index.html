@@ -16,10 +16,22 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <main>
     <div class="main">
-    <header class="header container">
-        <a href="https://www.instagram.com/viktoriia_pfeifer/?hl=ru" class="logo"><span>Victoriia Pfeifer</span></a>
+    <header class="header">
+    <div class="container mobile-bar">
+        <a href="https://www.instagram.com/viktoriia_pfeifer/?hl=ru" class="logo">
+            <img src="./img/logoweb.png" alt="">
+        </a>
+        <button type="button" class="mobile-header__button is-open" data-menu-button>
+            <svg width="40" height="40" aria-label="мобильное меню">
+                <use class="mobile-header__icon-menu" href="./img/icons.svg#icon-menu_40px"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu__button is-open" data-menu-button>
+                <svg width="40" height="40" aria-label="мобильное меню" data-menu-close>
+                    <use class="mobile-header__icon-cross" href="./img/icons.svg#icon-close_40px"></use>
+                </svg></button>
         <nav>
             <ul class="site-nav">
                 <li class="site-nav_item"><a class="site-nav_link" href="#about">Курс</a></li>
@@ -35,8 +47,33 @@
                     <use href="./img/icons.svg#icon-instagram"></use>
                 </svg>
             </a>
-            </button>       
+            </button>
+            </div>
+        </div>
+    </div>
+        <div class="container desktop">
+            <a href="https://www.instagram.com/viktoriia_pfeifer/?hl=ru" class="logo"><span>Victoriia Pfeifer</span></a>
+            <nav>
+                <ul class="site-nav">
+                    <li class="site-nav_item"><a class="site-nav_link" href="#about">Курс</a></li>
+                    <li class="site-nav_item"><a class="site-nav_link" href="#client">Для кого</a></li>
+                    <li class="site-nav_item"><a class="site-nav_link" href="#author">Об авторе</a></li>
+                    <li class="site-nav_item"><a class="site-nav_link" href="#rewiew">Отзывы</a></li>
+                    <li class="site-nav_item"><a class="site-nav_link" href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contacts-head">
+                <button class="contacts-head_button"><a href="https://www.instagram.com/viktoriia_pfeifer/"
+                        class="contacts-head_link">Напиши мне
+                        <svg class="contacts__icon" width="18" height="18">
+                            <use href="./img/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </button>
+            </div>
+        </div>
     </header>
+    <main>
     <div class="container">
     <section class="hero">
         <img src="./img/girl1.png" alt="" width="250" class="hero_img">
@@ -91,20 +128,20 @@
         <li></li>  
     </ul>
     </section>
-    
-
+    </div>
+    </main>
    <footer id="contacts">
+    <div class="container">
     <address>
         <ul>
             <li><a href=""></a></li>
             <li><a href="">Написать в Директ</a></li>
             <li><a href="">Мой Telegram</a></li>
         </ul>
-        
     </address>
+    </div>
    </footer>
 </div>
-    </div>
-</main>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
