@@ -673,7 +673,7 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: 120px;
+    width: 100px;
     opacity: 1;
   }
   .hero_img:hover {
