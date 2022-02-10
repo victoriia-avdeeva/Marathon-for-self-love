@@ -14,8 +14,8 @@
     text-align: end;
     font-weight: 300;
     font-family: Pacifico;
-    margin-bottom: 70px;
-    font-size: 35px;
+    margin-bottom: 30px;
+    font-size: 30px;
     line-height: 1.2;
   }
   .hero_title {
@@ -23,8 +23,8 @@
   }
   .hero_img {
     display: flex;
-    justify-content: flex-start;
-    width: 100px;
+    // justify-content: flex-start;
+    width: 120px;
     opacity: 1;
 
     &:hover {
