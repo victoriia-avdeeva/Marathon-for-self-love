@@ -46,7 +46,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     margin-left: auto;
     background-color: #dee0e0;
     background-image: url(../img/f1.jpg);
@@ -126,6 +126,9 @@
     &:not(:last-child) {
       margin-right: 15px;
     }
+  }
+  .link__hide {
+    display: none;
   }
   .site-nav_link {
     color: black;

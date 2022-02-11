@@ -10,7 +10,7 @@
     padding: 5px 7px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-    color: aliceblue;
+    color: white;
     background-color: #682483;
     transform: scale(1);
 
@@ -38,6 +38,23 @@
       to {
         -webkit-mask-position: -50%;
       }
+    }
+  }
+  .backdrop {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    height: 100%;
+    // background-color: rgba(25, 28, 38, 0.3);
+
+    transition: 550ms;
+    &.is-hidden {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
     }
   }
 }

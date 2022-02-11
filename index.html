@@ -18,31 +18,31 @@
 <body>
     <div class="main">
     <header class="header">
-    <div class="container mobile-bar">
+    <div class="container mobile-bar" >
         <a href="https://www.instagram.com/viktoriia_pfeifer/?hl=ru" class="logo">
             <!-- <img src="./img/logoweb.png" alt=""> --><span>Victoriia Pfeifer</span>
         </a>
-        <button type="button" class="mobile-header__button is-open" data-menu-button>
+        <button type="button" class="mobile-header__button is-open" data-menu-button data-backdrop-open>
             <svg width="40" height="40" aria-label="мобильное меню">
                 <use class="mobile-header__icon-menu" href="./img/icons.svg#icon-menu_40px"></use>
             </svg>
         </button>
-        <div class="mobile-menu" data-menu>
-            <button type="button" class="mobile-menu__button is-open" data-menu-button>
-                <svg width="40" height="40" aria-label="мобильное меню" data-menu-close>
+        <div class="backdrop is-hidden" data-backdrop>
+            <div class="mobile-menu" data-menu the-menu>
+            <button type="button" class="mobile-menu__button is-open" data-menu-button data-menu-close data-backdrop-close>
+                <svg width="40" height="40" aria-label="мобильное меню" >
                     <use class="mobile-header__icon-cross" href="./img/icons.svg#icon-close_40px"></use>
-                </svg></button>
-        <nav>
+                </svg>
+            </button>       
             <ul class="site-nav">
                 <li class="site-nav__item"><a class="site-nav__link" href="#about">Курс</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="#client">Для кого</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#price">Стоимость</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="#author">Об авторе</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="#rewiew">Отзывы</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="#docs">Правовые документы</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="#contacts">Контакты</a></li>
-                
+                <li class="site-nav__item"><a class="site-nav__link" href="#docs">Правовая информация</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#contacts">Контакты</a></li>               
             </ul>
-        </nav>
         <!-- <div class="contacts-head">
             <button class="contacts-head_button"><a href="https://www.instagram.com/viktoriia_pfeifer/" class="contacts-head_link">Напиши мне
                 <svg class="contacts__icon" width="18" height="18">
@@ -51,13 +51,14 @@
             </a>
             </button>
             </div> -->
-        </div>
+        </div></div>
     </div>
         <div class="container desktop">
             <a href="https://www.instagram.com/viktoriia_pfeifer/?hl=ru" class="logo"><span>Victoriia Pfeifer</span></a>
             <nav class="site-nav">      
                     <li class="site-nav_item"><a class="site-nav_link" href="#author">Об авторе</a></li>
                     <li class="site-nav_item"><a class="site-nav_link" href="#rewiew">Отзывы</a></li>
+                    <li class="site-nav_item link__hide"><a class="site-nav_link" href="#docs">Правовая информация</a></li>
                     <li class="site-nav_item"><a class="site-nav_link" href="#contacts">Контакты</a></li>
             </nav>
             <div class="contacts-head">
@@ -80,19 +81,19 @@
             <h1 class="hero_title">Марафон<br> любви к себе</h1>
         <button class="hero_button">Записаться на курс</button></div>
     </section>
-    <section class="about section" id="about" data-menu-close>
-        <h2>Курс "Марафон любви к себе" - это </h2>
-    <ul>
-        <li>14 разных занятий для самостоятельного изучения.</li>
-        <li>Новая тема ежедневно, которую Вы можете пройти в любое время.</li>
-        <li>Каждый урок состоит из 2 частей: теории и практики.</li>
-        <li>Постоянная поддержка в прохождении программы.</li>
-        <li>Оперативная обратная связь.</li>
-        <li>Полная конфиденциальность.</li>
+    <section class="about section" id="about">
+        <h2 class="about__title">Курс "Марафон любви к себе" - это </h2>
+    <ul class="about__list">
+        <li class="about__text">14 разных занятий для самостоятельного изучения.</li>
+        <li class="about__text">Новая тема ежедневно, которую Вы можете пройти в любое время.</li>
+        <li class="about__text">Каждый урок состоит из 2 частей: теории и практики.</li>
+        <li class="about__text">Постоянная поддержка в прохождении программы.</li>
+        <li class="about__text">Оперативная обратная связь.</li>
+        <li class="about__text">Полная конфиденциальность.</li>
     </ul>
     </section>
     <section class="client section">
-        <h2>Что дает этот курс?</h2>
+        <h2>Что даcт этот курс?</h2>
         <ul>
             <li>Возможность качественно проработать детско-родительские травмы, обиды и страхи.</li>
             <li>Научиться экологично выстраивать и защищать свои личные границы.</li>
@@ -102,7 +103,15 @@
             <li>Перестать откладывать свою жизнь на потом.</li>
         </ul>   
     </section>
-    <section class="author section" id="author" data-menu-close>
+    <section class="price" id="price">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </section>
+    <section class="author section" id="author">
         <h2>Автор курса</h2>
     <ul>
         <li>Меня зовут Виктория и я точно знаю чувство когда кажется, что земля уходит из-под ног, а в жизни полный бардак.
@@ -116,7 +125,7 @@
         <li>Этот курс прошли уже сотни людей и я могу гарантировать результат тем, кто пройдет его полностью!</li>
     </ul>
     </section>
-    <section class="rewiew section" id="rewiew" data-menu-close>
+    <section class="rewiew section" id="rewiew">
         <h2>
         </h2>
     <ul>
@@ -126,12 +135,17 @@
         <li></li>  
     </ul>
     </section>
-    <section class="documents" id="docs" data-menu-close>
-
+    <section class="documents" id="docs">
+        <button>
+            <a href="./politics.html">Политика защиты персональных данных</a>
+        </button>
+        <button>
+            <a href="./oferta.html">Публичная оферта</a>
+        </button>
     </section>
     </div>
     </main>
-   <footer id="contacts" data-menu-close>
+   <footer id="contacts">
     <div class="container">
     <address>
         <ul>
@@ -144,5 +158,7 @@
    </footer>
 </div>
 <script src="./js/mobile-menu.js"></script>
+<script src="./js/close.js"></script>
+<script src="./js/backdrop.js"></script>
 </body>
 </html>
