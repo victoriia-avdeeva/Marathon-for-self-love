@@ -135,7 +135,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 0);
     &:hover,
     &:focus {
-      color: #4c3b85;
+      color: white;
     }
     &::after {
       display: block;
@@ -225,25 +225,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 0);
     &:hover,
     &:focus {
-      color: #4c3b85;
-    }
-    &::after {
-      display: block;
-      position: absolute;
-      margin: 0;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      content: '.';
-      color: transparent;
-      width: 1px;
-      height: 1px;
-      border-radius: 50%;
-      background: transparent;
-    }
-    &:hover::after {
-      animation: circle 1.5s ease-in forwards;
+      color: white;
     }
   }
   .contacts-head {
