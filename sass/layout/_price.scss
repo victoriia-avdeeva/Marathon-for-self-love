@@ -1,0 +1,36 @@
+@media screen and (max-width: 767px) {
+  //   .price__title {
+  //     // margin-bottom: 20px;
+  //   }
+  .price_list {
+    margin: 0 30px;
+    padding: 30px;
+  }
+  .price__item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .price__name {
+    font-family: Pacifico;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+  .price__inf {
+    margin-bottom: 30px;
+  }
+  .price__number {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    color: rgba(104, 36, 131, 1);
+  }
+  .price__number--small {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    color: black;
+  }
+}
