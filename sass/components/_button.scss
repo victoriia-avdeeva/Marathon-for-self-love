@@ -10,7 +10,6 @@
     padding: 5px 7px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-    color: white;
     background-color: #682483;
     transform: scale(1);
 
@@ -39,6 +38,9 @@
         -webkit-mask-position: -50%;
       }
     }
+  }
+  .hero__link {
+    color: white;
   }
 }
 @media screen and (min-width: 768px) {
@@ -82,5 +84,8 @@
         -webkit-mask-position: -50%;
       }
     }
+  }
+  .hero__link {
+    color: white;
   }
 }

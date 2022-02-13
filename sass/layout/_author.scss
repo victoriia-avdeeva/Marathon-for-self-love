@@ -1,0 +1,21 @@
+@media screen and (max-width: 767px) {
+  .author {
+    display: flex;
+    flex-direction: column;
+  }
+  .author__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .author__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .author__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

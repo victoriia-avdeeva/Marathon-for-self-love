@@ -19,7 +19,7 @@
     <div class="main">
     <header class="header">
     <div class="container mobile-bar" >
-        <a href="https://www.instagram.com/viktoriia_pfeifer/?hl=ru" class="logo">
+        <a href="https://www.instagram.com/viktoriia_pfeifer/" class="logo">
             <!-- <img src="./img/logoweb.png" alt=""> --><span>Victoriia Pfeifer</span>
         </a>
         <button type="button" class="mobile-header__button is-open" data-menu-button data-backdrop-open>
@@ -54,7 +54,7 @@
         </div></div>
     </div>
         <div class="container desktop">
-            <a href="https://www.instagram.com/viktoriia_pfeifer/?hl=ru" class="logo"><span>Victoriia Pfeifer</span></a>
+            <a href="#" class="logo"><span>Victoriia Pfeifer</span></a>
             <nav class="site-nav">      
                     <li class="site-nav_item"><a class="site-nav_link" href="#author">Об авторе</a></li>
                     <li class="site-nav_item"><a class="site-nav_link" href="#rewiew">Отзывы</a></li>
@@ -79,7 +79,8 @@
         <div class="hero-box">
             <h1 class="hero_title__mob">Марафон<br> любви к себе</h1>
             <h1 class="hero_title">Марафон<br> любви к себе</h1>
-        <button type="button" class="hero_button">Записаться на курс</button></div>
+        <button type="button" class="hero_button"><a href="https://t.me/ViktoriiaPfeifer" class="hero__link">
+            Записаться на курс</a></button></div>
     </section>
     <section class="about" id="about">
         <img src="./img/free-png.ru-362.png" alt="" class="about__img">
@@ -129,29 +130,33 @@
         <div>
             <ul class="price_list">
             <li class="price__item price__item--after">                
-                <h3 class="price__name">Минимальный</h3>
-                <p class="price__inf">без проверки домашнего задания</p>
+                <h3 class="price__name price--mar">Минимальный</h3>
+                <p class="price__inf price--mar2">без проверки домашнего задания</p>
                 <p class="price__number"><span class="price__number--big">300</span><span class="price__number--small">грн</span></p>
-                <button type="button" class="price__button" data-modal-open1>Купить
+                <div class="price__div">
+                    <button type="button" class="price__button" data-modal-open1>Купить
                     <!-- <a href="#price" class="price__link">Купить</a> -->
-                </button>
+                </button></div>
+                
             </li>
             <li class="price__item price__item--after">
-                <h3 class="price__name">Оптимальный</h3>
-                <p class="price__inf">с проверкой домашнего задания</p>
+                <h3 class="price__name price--mar">Оптимальный</h3>
+                <p class="price__inf price--mar2">с проверкой домашнего задания</p>
                 <p class="price__number"><span class="price__number--big">550</span><span class="price__number--small">грн</span></p>
-                <button type="button" class="price__button" data-modal-open2>Купить
-                <!-- <a href="#price" class="price__link">Купить</a> -->
-            </button>
+                <div class="price__div"><button type="button" class="price__button" data-modal-open2>Купить
+                    <!-- <a href="#price" class="price__link">Купить</a> -->
+                </button></div>
+                
         </li>
             <li class="price__item">   
                 <h3 class="price__name">Комфортный</h3>
                 <p class="price__inf1">с проверкой домашнего задания</p>
                 <p class="price__inf">личная консультация от автора</p> 
                 <p class="price__number"><span class="price__number--big">990</span><span class="price__number--small">грн</span></p>
-                <button type="button" class="price__button" data-modal-open3>Купить
+                <div class="price__div"><button type="button" class="price__button" data-modal-open3>Купить
                     <!-- <a href="#price" class="price__link">Купить</a> -->
-                </button>
+                </button></div>
+                
             </li>
         </ul>
         
@@ -179,8 +184,9 @@
         
     </section>
     <section class="author section" id="author">
-        <h2>Автор курса</h2>
-    <ul>
+        <h2 class="section-title author__title">Автор курса</h2>
+    <ul class="author__list">
+        <img class="author__img" src="./img/test.png" alt="" width="320">
         <li>Меня зовут Виктория и я точно знаю чувство когда кажется, что земля уходит из-под ног, а в жизни полный бардак.
         Если это именно то, что вы чувствуете сейчас - отлично, вы попали по адресу и я с удовольствием помогу сделать вам
         "генеральную уборку" ваших текущих дел.</li>
@@ -225,7 +231,7 @@
    </footer>
 <div class="backdrop backdrop__modal is-hidden" data-modal-1>
     <div class="modal">
-        <h3 class="modal-title">Связаться с автором для оплаты</h3>
+        <h3 class="modal-title">Связаться с автором<br> для оплаты</h3>
         <div class="modal__div">
             <a class="social__item" href="https://api.whatsapp.com/send?phone=380631731463"><svg class="modal__icons" width="40" height="40">
                 <use href="./img/icons.svg#icon-whatsapp"></use>
@@ -234,12 +240,11 @@
             <a class="social__item"  href="https://t.me/ViktoriiaPfeifer"><svg class="modal__icons" width="40" height="40">
                 <use href="./img/icons.svg#icon-telegram"></use>
             </svg></a>
-            <a class="social__item"  href=""><svg class="modal__icons" width="40" height="40">
+            <a class="social__item"  href="https://www.instagram.com/viktoriia_pfeifer/"><svg class="modal__icons" width="40" height="40">
                 <use href="./img/icons.svg#icon-instagram2"></use>
             </svg></a>
             
         </div>
-        
         <button class="modal-form__button-close" data-modal-close1>
             <svg class="modal-form__icon-close">
                 <use href="./img/icons.svg#close"></use>
@@ -249,6 +254,21 @@
 <div class="backdrop backdrop__modal is-hidden" data-modal-2>
     <div class="modal">
         <h3 class="modal-title">Связаться с автором для оплаты</h3>
+        <div class="modal__div">
+            <a class="social__item" href="https://api.whatsapp.com/send?phone=380631731463"><svg class="modal__icons" width="40"
+                    height="40">
+                    <use href="./img/icons.svg#icon-whatsapp"></use>
+                </svg>
+            </a>
+            <a class="social__item" href="https://t.me/ViktoriiaPfeifer"><svg class="modal__icons" width="40" height="40">
+                    <use href="./img/icons.svg#icon-telegram"></use>
+                </svg></a>
+            <a class="social__item" href="https://www.instagram.com/viktoriia_pfeifer/"><svg class="modal__icons" width="40"
+                    height="40">
+                    <use href="./img/icons.svg#icon-instagram2"></use>
+                </svg></a>
+        
+        </div>
         <button class="modal-form__button-close" data-modal-close2>
             <svg class="modal-form__icon-close">
                 <use href="./img/icons.svg#close"></use>
@@ -260,6 +280,21 @@
 <div class="backdrop backdrop__modal is-hidden" data-modal-3>
     <div class="modal">
         <h3 class="modal-title">Связаться с автором для оплаты</h3>
+        <div class="modal__div">
+            <a class="social__item" href="https://api.whatsapp.com/send?phone=380631731463"><svg class="modal__icons" width="40"
+                    height="40">
+                    <use href="./img/icons.svg#icon-whatsapp"></use>
+                </svg>
+            </a>
+            <a class="social__item" href="https://t.me/ViktoriiaPfeifer"><svg class="modal__icons" width="40" height="40">
+                    <use href="./img/icons.svg#icon-telegram"></use>
+                </svg></a>
+            <a class="social__item" href="https://www.instagram.com/viktoriia_pfeifer/"><svg class="modal__icons" width="40"
+                    height="40">
+                    <use href="./img/icons.svg#icon-instagram2"></use>
+                </svg></a>
+        
+        </div>
         <button class="modal-form__button-close" data-modal-close3>
             <svg class="modal-form__icon-close">
                 <use href="./img/icons.svg#close"></use>
