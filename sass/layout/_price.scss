@@ -117,6 +117,7 @@
   .price {
     position: relative;
     padding-top: 60px;
+    padding-bottom: 40px;
   }
   .price_list {
     display: flex;
@@ -231,9 +232,10 @@
   .price {
     position: relative;
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   .price__title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .price_list {
     display: flex;
@@ -289,7 +291,7 @@
     font-size: 60px;
     line-height: 1.1;
 
-    color: rgba(104, 36, 131, 1);
+    color: white;
   }
   .price__number--small {
     display: flex;

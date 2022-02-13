@@ -54,7 +54,7 @@
         </div></div>
     </div>
         <div class="container desktop">
-            <a href="#" class="logo"><span>Victoriia Pfeifer</span></a>
+            <a href="#author" class="logo"><span>Victoriia Pfeifer</span></a>
             <nav class="site-nav">      
                     <li class="site-nav_item"><a class="site-nav_link" href="#author">Об авторе</a></li>
                     <li class="site-nav_item"><a class="site-nav_link" href="#rewiew">Отзывы</a></li>
@@ -185,18 +185,27 @@
     </section>
     <section class="author" id="author">
         <h2 class="section-title author__title">Автор курса</h2>
-        <img class="author__img" src="./img/test.png" alt="" width="320">
-    <ul class="author__list">
-        <li class="author__text">Меня зовут Виктория и я точно знаю чувство когда кажется, что земля уходит из-под ног, а в жизни полный бардак.
-        Если это именно то, что вы чувствуете сейчас - отлично, вы попали по адресу и я с удовольствием помогу сделать вам
-        "генеральную уборку" ваших текущих дел.</li>
-        <li class="author__text">Уже больше 6 лет я, как практикующий психолог, помогаю людям справиться со сложными ситуациями и находить
-        гармонию в себе.</li>
-        <li class="author__text">Моя программа "Принять себя за 14 дней" помогла многим людям лучше понимать себя, а главное влюбиться в себя
-        заново. Но лучше обо мне скажут многочисленные отзывы участников моей программы и их потрясающие результаты работы над
-        собой.</li>
-        <li class="author__text">Этот курс прошли уже сотни людей и я могу гарантировать результат тем, кто пройдет его полностью!</li>
-    </ul>
+        <div class="author__div">
+            <img class="author__img" src="./img/test.png" alt="" width="320">
+            <ul class="author__list">
+                <li class="author__text">Меня зовут Виктория и я точно знаю чувство когда кажется, что земля уходит из-под ног, а в
+                    жизни полный бардак.
+                    Если это именно то, что вы чувствуете сейчас - отлично, вы попали по адресу и я с удовольствием помогу сделать
+                    вам
+                    "генеральную уборку" ваших текущих дел.</li>
+                <li class="author__text">Уже больше 6 лет я, как практикующий психолог, помогаю людям справиться со сложными
+                    ситуациями и находить
+                    гармонию в себе.</li>
+                <li class="author__text">Моя программа "Принять себя за 14 дней" помогла многим людям лучше понимать себя, а главное
+                    влюбиться в себя
+                    заново. Но лучше обо мне скажут многочисленные отзывы участников моей программы и их потрясающие результаты
+                    работы над
+                    собой.</li>
+                <li class="author__text">Этот курс прошли уже сотни людей и я могу гарантировать результат тем, кто пройдет его
+                    полностью!</li>
+            </ul>
+        </div>
+        
     </section>
     <section class="rewiew section" id="rewiew">
         <h2 class="section-title rewiew__title">Отзывы участников курса</h2>
@@ -229,26 +238,61 @@
 </div>
     </section>
     <section class="documents" id="docs">
-        <h2 class="section-title">Правовая информация</h2>
-        <button>
-            <a href="./politics.html">Политика защиты персональных данных</a>
+        <h2 class="section-title doc__title">Правовая информация</h2>
+        <div class="doc__div">
+            <button class="doc__button">
+            <a href="./politics.html" class="doc__link">Политика защиты персональных данных</a>
         </button>
-        <button>
-            <a href="./oferta.html">Публичная оферта</a>
-        </button>
+        <button class="doc__button">
+            <a href="./oferta.html" class="doc__link">Публичная оферта</a>
+        </button></div>
+        
     </section>
     </div>
     </main>
    <footer id="contacts">
-    <div class="container">
-    <address>
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href="">Написать в Директ</a></li>
-            <li><a href="">Мой Telegram</a></li>
+    <address class="footer">
+        <div class="contacts_div">
+            <img src="./img/vp.png" alt="" width="150" class="logo__img">
+            <img src="./img/vpwh.png" alt="" width="150" class="logo__img2">
+            <ul class="contacts__main">
+                <li class="link__items"><a href="tel:+380631731463" class="contacts__tel">+38 063 173 14 63</a></li>
+                <li class="link__items"><a href="mailto:viktoriia.pfeifer1@gmail.com" class="contacts__mail">viktoriia.pfeifer1@gmail.com</a></li>
+            </ul>
+        </div>
+         <ul class="contacts__icons">
+        <li class="contacts__item"><a class="footer__item" href="https://api.whatsapp.com/send?phone=380631731463">
+            <svg class="modal__icons foot__icons" width="40"
+                height="40">
+                <use href="./img/icons.svg#icon-whatsapp"></use>
+            </svg>
+        </a></li>
+        <li class="contacts__item"><a class="footer__item" href="https://t.me/ViktoriiaPfeifer">
+            <svg class="modal__icons foot__icons" width="40" height="40">
+                <use href="./img/icons.svg#icon-telegram"></use>
+            </svg></a></li>
+        <li class="contacts__item"><a class="footer__item" href="https://www.instagram.com/viktoriia_pfeifer/">
+            <svg class="modal__icons foot__icons" width="40"
+                height="40">
+                <use href="./img/icons.svg#icon-instagram2"></use>
+            </svg></a></li>
+    </ul>
+        <ul class="contacts__icons--desctop">
+            <li class="contacts__item"><a class="footer__item" href="https://api.whatsapp.com/send?phone=380631731463">
+                    <svg class="foot__icons" width="40" height="40">
+                        <use href="./img/icons.svg#icon-whatsapp2"></use>
+                    </svg>
+                </a></li>
+            <li class="contacts__item"><a class="footer__item" href="https://t.me/ViktoriiaPfeifer">
+                    <svg class="foot__icons" width="40" height="40">
+                        <use href="./img/icons.svg#icon-telegram2"></use>
+                    </svg></a></li>
+            <li class="contacts__item"><a class="footer__item" href="https://www.instagram.com/viktoriia_pfeifer/">
+                    <svg class="foot__icons" width="40" height="40">
+                        <use href="./img/icons.svg#icon-instagram3"></use>
+                    </svg></a></li>
         </ul>
     </address>
-    </div>
    </footer>
 <div class="backdrop backdrop__modal is-hidden" data-modal-1>
     <div class="modal">
