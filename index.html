@@ -79,7 +79,7 @@
         <div class="hero-box">
             <h1 class="hero_title__mob">Марафон<br> любви к себе</h1>
             <h1 class="hero_title">Марафон<br> любви к себе</h1>
-        <button class="hero_button">Записаться на курс</button></div>
+        <button type="button" class="hero_button">Записаться на курс</button></div>
     </section>
     <section class="about" id="about">
         <img src="./img/free-png.ru-362.png" alt="" class="about__img">
@@ -124,43 +124,58 @@
                 <p class="client__text">Перестать откладывать свою жизнь на потом.</p></li>
         </ul>   
     </section>
-    <section class="price section" id="price">
+    <section class="price" id="price">
         <h2 class="section-title price__title">Стоимость курса</h2>
         <div>
             <ul class="price_list">
-            <li class="price__item">
-                <p class="price__number"><span>300</span><span class="price__number--small">грн</span></p>
+            <li class="price__item price__item--after">                
                 <h3 class="price__name">Минимальный</h3>
-                <p class="price__inf">без проверки домашнего задания</p></li>
-            <li class="price__item">
-                <p class="price__number"><span>550</span><span class="price__number--small">грн</span></p>
+                <p class="price__inf">без проверки домашнего задания</p>
+                <p class="price__number"><span class="price__number--big">300</span><span class="price__number--small">грн</span></p>
+                <button type="button" class="price__button" data-modal-open1>Купить
+                    <!-- <a href="#price" class="price__link">Купить</a> -->
+                </button>
+            </li>
+            <li class="price__item price__item--after">
                 <h3 class="price__name">Оптимальный</h3>
-                <p class="price__inf">с проверкой домашнего задания</p></li>
-            <li class="price__item">
-                <p class="price__number"><span>990</span><span class="price__number--small">грн</span></p>
+                <p class="price__inf">с проверкой домашнего задания</p>
+                <p class="price__number"><span class="price__number--big">550</span><span class="price__number--small">грн</span></p>
+                <button type="button" class="price__button" data-modal-open2>Купить
+                <!-- <a href="#price" class="price__link">Купить</a> -->
+            </button>
+        </li>
+            <li class="price__item">   
                 <h3 class="price__name">Комфортный</h3>
-                <p>с проверкой домашнего задания</p>
-                <p class="price__inf">личная консультация от автора</p>    
+                <p class="price__inf1">с проверкой домашнего задания</p>
+                <p class="price__inf">личная консультация от автора</p> 
+                <p class="price__number"><span class="price__number--big">990</span><span class="price__number--small">грн</span></p>
+                <button type="button" class="price__button" data-modal-open3>Купить
+                    <!-- <a href="#price" class="price__link">Купить</a> -->
+                </button>
             </li>
         </ul>
-        <ul>
-            <h3>Заказать</h3>
-            <li>
+        
+        <!-- <ul class="price__social">
+            
+            <h3 class="price__order">Заказать</h3>
+            <div class="price__div">
+                <li class="price__icon">
                 <svg class="" width="40" height="40">
                     <use href="./img/icons.svg#icon-whatsapp"></use>
                 </svg>
             </li>
-            <li>
+            <li class="price__icon">
                 <svg class="" width="40" height="40">
                     <use href="./img/icons.svg#icon-telegram"></use>
                 </svg>
             </li>
-            <li>
+            <li class="price__icon">
                 <svg class="" width="40" height="40">
                     <use href="./img/icons.svg#icon-instagram2"></use>
                 </svg>
-            </li>
-        </ul></div>
+            </li></div>
+            
+        </ul></div> -->
         
     </section>
     <section class="author section" id="author">
@@ -208,9 +223,59 @@
     </address>
     </div>
    </footer>
+<div class="backdrop backdrop__modal is-hidden" data-modal-1>
+    <div class="modal">
+        <h3 class="modal-title">Связаться с автором для оплаты</h3>
+        <div class="modal__div">
+            <a class="social__item" href="https://api.whatsapp.com/send?phone=380631731463"><svg class="modal__icons" width="40" height="40">
+                <use href="./img/icons.svg#icon-whatsapp"></use>
+            </svg>
+        </a>
+            <a class="social__item"  href="https://t.me/ViktoriiaPfeifer"><svg class="modal__icons" width="40" height="40">
+                <use href="./img/icons.svg#icon-telegram"></use>
+            </svg></a>
+            <a class="social__item"  href=""><svg class="modal__icons" width="40" height="40">
+                <use href="./img/icons.svg#icon-instagram2"></use>
+            </svg></a>
+            
+        </div>
+        
+        <button class="modal-form__button-close" data-modal-close1>
+            <svg class="modal-form__icon-close">
+                <use href="./img/icons.svg#close"></use>
+            </svg>
+        </button>
+    </div></div>
+<div class="backdrop backdrop__modal is-hidden" data-modal-2>
+    <div class="modal">
+        <h3 class="modal-title">Связаться с автором для оплаты</h3>
+        <button class="modal-form__button-close" data-modal-close2>
+            <svg class="modal-form__icon-close">
+                <use href="./img/icons.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+
+</div>
+<div class="backdrop backdrop__modal is-hidden" data-modal-3>
+    <div class="modal">
+        <h3 class="modal-title">Связаться с автором для оплаты</h3>
+        <button class="modal-form__button-close" data-modal-close3>
+            <svg class="modal-form__icon-close">
+                <use href="./img/icons.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+
+</div>
 </div>
 <script src="./js/mobile-menu.js"></script>
 <script src="./js/close.js"></script>
 <script src="./js/backdrop.js"></script>
+<script src="./js/modal.js"></script>
+<script src="./js/modal2.js"></script>
+<script src="./js/modal3.js"></script>
+
+
 </body>
 </html>

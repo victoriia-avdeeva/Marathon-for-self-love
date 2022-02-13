@@ -137,24 +137,6 @@
     &:focus {
       color: white;
     }
-    &::after {
-      display: block;
-      position: absolute;
-      margin: 0;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      content: '.';
-      color: transparent;
-      width: 1px;
-      height: 1px;
-      border-radius: 50%;
-      background: transparent;
-    }
-    &:hover::after {
-      animation: circle 1.5s ease-in forwards;
-    }
   }
   .contacts-head {
     display: flex;
