@@ -183,32 +183,53 @@
         </ul></div> -->
         
     </section>
-    <section class="author section" id="author">
+    <section class="author" id="author">
         <h2 class="section-title author__title">Автор курса</h2>
-    <ul class="author__list">
         <img class="author__img" src="./img/test.png" alt="" width="320">
-        <li>Меня зовут Виктория и я точно знаю чувство когда кажется, что земля уходит из-под ног, а в жизни полный бардак.
+    <ul class="author__list">
+        <li class="author__text">Меня зовут Виктория и я точно знаю чувство когда кажется, что земля уходит из-под ног, а в жизни полный бардак.
         Если это именно то, что вы чувствуете сейчас - отлично, вы попали по адресу и я с удовольствием помогу сделать вам
         "генеральную уборку" ваших текущих дел.</li>
-        <li>Уже больше 6 лет я, как практикующий психолог, помогаю людям справиться со сложными ситуациями и находить
+        <li class="author__text">Уже больше 6 лет я, как практикующий психолог, помогаю людям справиться со сложными ситуациями и находить
         гармонию в себе.</li>
-        <li>Моя программа "Принять себя за 14 дней" помогла многим людям лучше понимать себя, а главное влюбиться в себя
+        <li class="author__text">Моя программа "Принять себя за 14 дней" помогла многим людям лучше понимать себя, а главное влюбиться в себя
         заново. Но лучше обо мне скажут многочисленные отзывы участников моей программы и их потрясающие результаты работы над
         собой.</li>
-        <li>Этот курс прошли уже сотни людей и я могу гарантировать результат тем, кто пройдет его полностью!</li>
+        <li class="author__text">Этот курс прошли уже сотни людей и я могу гарантировать результат тем, кто пройдет его полностью!</li>
     </ul>
     </section>
     <section class="rewiew section" id="rewiew">
-        <h2>
-        </h2>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>  
+        <h2 class="section-title rewiew__title">Отзывы участников курса</h2>
+    
+        <ul class="rewiew_list slider" slider>
+        <li class="rewiew_item item">
+            <img src="./img/rew1.png" alt="" class="rewiew_image" width="300px">
+        </li>
+        <li class="rewiew_item item">
+            <img src="./img/rew2.png" alt="" class="rewiew_image" height="300px">
+        </li>
+        <li class="rewiew_item item">
+            <img src="./img/rew3.png" alt="" class="rewiew_image" width="300px">
+        </li>
+        <li class="rewiew_item item">
+            <img src="./img/rew4.png" alt="" class="rewiew_image" height="300px">
+        </li>
+        <li class="rewiew_item item">
+            <img src="./img/rew5.png" alt="" class="rewiew_image" width="300px">
+        </li>
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
     </ul>
+<div class="slider-dots">
+    <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+    <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+    <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+    <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+    <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+</div>
     </section>
     <section class="documents" id="docs">
+        <h2 class="section-title">Правовая информация</h2>
         <button>
             <a href="./politics.html">Политика защиты персональных данных</a>
         </button>
@@ -310,6 +331,9 @@
 <script src="./js/modal.js"></script>
 <script src="./js/modal2.js"></script>
 <script src="./js/modal3.js"></script>
+<!-- <script src="./js/slider.js"></script> -->
+<script src="./js/slider-work.js"></script>
+
 
 
 </body>
