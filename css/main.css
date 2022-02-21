@@ -1363,7 +1363,7 @@ a {
     width: 300px;
     height: 300px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     -webkit-transform: scale(1);
             transform: scale(1);
     -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 0), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 0);
@@ -2957,10 +2957,6 @@ a {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 0);
-    transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 0);
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 0);
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 0), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 0);
   }
   .footer__item:hover, .footer__item:focus {
     -webkit-transform: scale(1.1);
