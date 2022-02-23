@@ -1,0 +1,21 @@
+@import './utils/_variables.scss';
+@import './utils/visually-hidden';
+
+@import './base/_common.scss';
+
+@import './components/container';
+@import './components/button';
+@import './components/logo';
+@import './components/backdrop';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/client';
+@import './layout/price';
+@import './layout/author';
+@import './layout/rewiew';
+@import './layout/documents';
+@import './layout/footer';
+
+@import './layout/pages';

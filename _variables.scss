@@ -1,0 +1,29 @@
+$animation-timing-function: cubic-bezier(0.4, 0, 0.2, 0);
+$animation-duration: 250ms;
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.3;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.3;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.3;
+    text-align: center;
+  }
+}

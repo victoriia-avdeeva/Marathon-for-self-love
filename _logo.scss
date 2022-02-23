@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) {
+  .logo {
+    display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 0);
+    justify-content: flex-start;
+    font-family: Berkshire Swash;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.16;
+    color: black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &:hover,
+    &:focus {
+      color: #682483;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 0);
+    justify-content: flex-start;
+    font-family: Berkshire Swash;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.16;
+    color: black;
+    margin-left: 15px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &:hover,
+    &:focus {
+      color: #682483;
+    }
+  }
+}
